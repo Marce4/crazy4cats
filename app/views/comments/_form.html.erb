@@ -13,12 +13,12 @@
     <%= f.hidden_field :article_id, value: @article.id %>
 
     <div class = 'field'>
-        <%= f.label :content, as: "Contenido" %>
-        <%= f.text_field :content %>
+        <%= f.label :content, "Comentario", as: "Contenido" %>
+        <%= f.text_area :content %>
     </div>
 
     <div class = 'actions'>
-        <%= f.submit %>
+        <%= f.submit "Guardar Comentario" %>
     </div>
 
 <% end %>
