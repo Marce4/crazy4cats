@@ -18,7 +18,7 @@
           </ul>
         </li>
       <li>
-        <%- if current_user_signed_in %>
+        <% if user_signed_in? %>
           <%= button_to "Cerrar sesion", destroy_session_path(current_user), method: :delete %>
         <% end %>
       </li>
